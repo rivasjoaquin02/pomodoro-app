@@ -2,7 +2,8 @@
 
 This is a simple pomodoro app built with React and Vite.
 
-[LIVE SITE 😉]("https://pomodoro-app-omega-umber.vercel.app/")
+- LIVE SITE 😉
+https://pomodoro-app-omega-umber.vercel.app/
 
 ## Features
 
