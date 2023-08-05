@@ -1,0 +1,38 @@
+.picker {
+    display: flex;
+    gap: 15px;
+}
+
+.picker-item {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    color: var(--clr-primary);
+    font-weight: 600;
+}
+
+.picker-item:hover {
+    filter: brightness(0.9);
+    color: black;
+}
+
+.picker-font:hover {
+    background: var(--clr-secondary);
+    color: var(--clr-text);
+}
+
+.theme1 {
+    background: var(--clr-accent);
+}
+
+.theme2 {
+    background: var(--clr-accent2);
+}
+
+.theme3 {
+    background: var(--clr-accent3);
+}

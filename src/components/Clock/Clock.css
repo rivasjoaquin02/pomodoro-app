@@ -1,0 +1,100 @@
+:root {
+    --clock-size: 400px;
+    --clock-border-size: 20px;
+    --progress: 0%;
+}
+
+.clock-container {
+    border-radius: 50%;
+
+    box-sizing: border-box;
+    padding: 10px;
+    border: 25px solid var(--clr-secondary);
+}
+
+.clock-outter {
+    height: var(--clock-size);
+    width: var(--clock-size);
+
+    position: relative;
+    margin-inline: auto;
+}
+
+.clock-outter::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgb(0, 0, 0) 100%
+    );
+    filter: blur(100px);
+    height: calc(var(--clock-size));
+    width: calc(var(--clock-size));
+    border-radius: 50%;
+
+    z-index: -100;
+}
+
+.clock-inner {
+    position: absolute;
+    background: conic-gradient(
+        var(--clr-accent) var(--progress),
+        var(--clr-secondary) var(--progress)
+    );
+
+    height: var(--clock-size);
+    width: var(--clock-size);
+    border: none;
+    border-radius: 50%;
+
+    display: grid;
+    place-content: center;
+    gap: 43px;
+    z-index: -1;
+
+    font-size: 4rem;
+
+    animation: rotation 10s linear infinite;
+    transition: background 1000ms linear;
+
+    font-size: 100px;
+    font-weight: bold;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.clock-inner span {
+    font-size: 25px;
+    margin-inline: auto;
+    color: var(--clr-accent2);
+}
+
+.clock-inner .total-time {
+    font-size: 25px;
+    margin-inline: auto;
+}
+
+.clock-inner .pause {
+    letter-spacing: 1rem;
+}
+
+.clock-inner::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: var(--bg);
+    height: calc(var(--clock-size) - var(--clock-border-size));
+    width: calc(var(--clock-size) - var(--clock-border-size));
+
+    border-radius: 50%;
+    z-index: -1;
+}

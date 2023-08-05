@@ -1,0 +1,40 @@
+/* NAVBAR */
+
+.navbar {
+    background: var(--clr-secondary);
+
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    width: 350px;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 50px;
+
+    margin-inline: auto;
+}
+
+.btn-navbar {
+    display: flex;
+
+    height: 45px;
+    width: 120px;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 18px;
+    background: transparent;
+
+    border-radius: inherit;
+    border: none;
+
+    font-weight: bold;
+    color: gray;
+    letter-spacing: 0.03rem;
+}
+
+.btn-navbar:hover, .btn-navbar-active {
+    background: var(--clr-accent);
+    color: var(--clr-primary);
+}

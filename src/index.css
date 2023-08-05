@@ -1,3 +1,64 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+    --bg: rgb(30, 33, 64);
+    --clr-text: rgb(215, 224, 255);
+
+    --clr-primary: rgb(30, 33, 64);
+    --clr-secondary: rgb(21, 25, 50);
+    --clr-accent: rgb(254, 108, 116);
+    --clr-accent2: rgb(111, 242, 248);
+    --clr-accent3: rgb(217, 129, 249);
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    src: local("Roboto"), url("/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--clr-text);
+}
+
+* {
+    color: var(--clr-text);
+    font-family: "Roboto", sans-serif;
+}
+
+.app {
+    position: relative;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+h1 {
+    margin: 0;
+    margin-inline: auto;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.btn-settings {
+    margin-inline: auto;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.btn-settings svg:hover {
+    animation: rotationIcon 1s ease-in-out normal;
+}
+
+@keyframes rotationIcon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
