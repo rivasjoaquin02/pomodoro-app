@@ -1,27 +1,57 @@
-# React + TypeScript + Vite
+# Pomodoro App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple pomodoro app built with React and Vite.
 
-Currently, two official plugins are available:
+[Click here for view the app]("http://pomodoro-app-1.surge.sh/")
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   [Pomodoro App](#pomodoro-app)
 
-## Expanding the ESLint configuration
+    -   [Description](#description)
+    -   [Getting Started](#getting-started)
+    -   [Screenshots](#screenshots)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
--   Configure the top-level `parserOptions` property like this:
+-   Lets you set a timer for `x` minutes and take a `y` minute break.
+-   You can set the timer to loop indefinitely or stop after `n` loops.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Tech used
+
+-   React
+-   Vite
+-   Typescript
+
+## Installation
+
+1. Clone the repository:
+
+```shell
+git clone git@github.com:rivasjoaquin02/pomodoro-app.git
 ```
 
--   Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
--   Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
--   Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Install the dependencies:
+
+```shell
+npm install
+```
+
+1. Start the development server:
+
+```shell
+npm run dev
+```
+
+## Screenshots
+
+<section style="display: flex; gap: 5px; flex-wrap: wrap" >
+  <img src="screenshots/image.png" width="300" />
+  <img src="screenshots/image-1.png" width="300" />
+</section>
+
+## Contributing
+
+Contributions are always welcome! If you have any suggestions or find any bugs, please open an issue or a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
