@@ -26,7 +26,7 @@ function App() {
                 className="btn-settings"
                 type="button"
             >
-                <SettingsIcon size={50} />
+                <SettingsIcon />
             </button>
         </main>
     );

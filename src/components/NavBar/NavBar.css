@@ -5,10 +5,11 @@
 
     display: flex;
     justify-content: space-between;
-    gap: 4px;
-    width: 350px;
+
+    gap: min(.2rem, 5vw);
+
     box-sizing: border-box;
-    padding: 8px;
+    padding: min(.5rem, 5vw);
     border-radius: 50px;
 
     margin-inline: auto;
@@ -17,13 +18,10 @@
 .btn-navbar {
     display: flex;
 
-    height: 45px;
-    width: 120px;
-
     justify-content: center;
     align-items: center;
 
-    padding: 18px;
+    padding: min(.6rem, 5vw);
     background: transparent;
 
     border-radius: inherit;

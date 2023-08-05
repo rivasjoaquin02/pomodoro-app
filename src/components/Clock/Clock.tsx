@@ -75,11 +75,7 @@ const Clock: FC<ClockProps> = ({ category }) => {
                     ref={clock}
                 >
                     <div
-                        style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "30px",
-                        }}
+                        className="clock-text-container"
                     >
                         <span className="total-time">
                             {category === "pomodoro" &&
