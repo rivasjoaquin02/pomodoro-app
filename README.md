@@ -2,7 +2,7 @@
 
 This is a simple pomodoro app built with React and Vite.
 
-[Click here for view the app]("http://pomodoro-app-1.surge.sh/")
+[LIVE SITE 😉]("https://pomodoro-app-omega-umber.vercel.app/")
 
 ## Features
 
