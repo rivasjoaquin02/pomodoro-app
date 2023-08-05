@@ -4,12 +4,6 @@ This is a simple pomodoro app built with React and Vite.
 
 [Click here for view the app]("http://pomodoro-app-1.surge.sh/")
 
--   [Pomodoro App](#pomodoro-app)
-
-    -   [Description](#description)
-    -   [Getting Started](#getting-started)
-    -   [Screenshots](#screenshots)
-
 ## Features
 
 -   Lets you set a timer for `x` minutes and take a `y` minute break.
