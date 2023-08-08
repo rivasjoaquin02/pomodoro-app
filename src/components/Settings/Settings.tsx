@@ -36,6 +36,7 @@ const Settings: FC<SettingsProps> = ({ closeSettings }) => {
                     <XIcon />
                 </button>
             </div>
+            <hr />
             <div className="settings__properties">
                 <div className="settings__properties-time-container">
                     <h3>TIME (MINUTES)</h3>
@@ -75,6 +76,7 @@ const Settings: FC<SettingsProps> = ({ closeSettings }) => {
                         </div>
                     </div>
                 </div>
+                <hr />
                 <PropertySettings>
                     <h3>FONT</h3>
                     <Picker>
@@ -101,6 +103,8 @@ const Settings: FC<SettingsProps> = ({ closeSettings }) => {
                         </PickerItem>
                     </Picker>
                 </PropertySettings>
+
+                <hr />
 
                 <PropertySettings>
                     <h3>COLOR</h3>
